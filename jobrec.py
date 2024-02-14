@@ -29,10 +29,10 @@ def profile(job_id):
     
     
     conn = pymysql.connect(
-        host="198.38.84.178",
-        user="kweekly_ironhack", 
-        password="ironhack",
-        database="kweekly_ironhack",
+        host="IP",
+        user="TABLE_NAME", 
+        password="DB_PASS",
+        database="DB_NAME",
         cursorclass=pymysql.cursors.DictCursor
     )
 
@@ -72,10 +72,10 @@ def all_jobs():
     items_per_page = request.args.get('items_per_page', default=10, type=int)
 
     conn = pymysql.connect(
-        host="198.38.84.178",
-        user="kweekly_ironhack", 
-        password="ironhack",
-        database="kweekly_ironhack",
+        host="IP",
+        user="TABLE_NAME", 
+        password="DB_PASS",
+        database="DB_NAME",
         cursorclass=pymysql.cursors.DictCursor
     )
 
